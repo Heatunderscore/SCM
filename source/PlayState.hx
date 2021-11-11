@@ -2353,7 +2353,7 @@ class PlayState extends MusicBeatState
 						camFollow.y = boyfriend.getMidpoint().y - 200;
 					case 'sucktion':
 						camFollow.y = boyfriend.getMidpoint().y - 150;
-						camFollow.x = boyfriend.getMidpoint().x - -100;
+						camFollow.x = boyfriend.getMidpoint().x - 250;
 				}
 			}
 		}
@@ -2552,7 +2552,8 @@ class PlayState extends MusicBeatState
 							if (SONG.notes[Math.floor(curStep / 16)].altAnim)
 								altAnim = '-alt';
 						}
-						/*if (SONG.player2 == 'suck' && curSong.toLowerCase() == 'tower'){
+						/*if (SONG.player2 == 'suck' && curSong.toLowerCase() == 'tower')
+						{
 							dad.y -= 5;
 						}*/
 

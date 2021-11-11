@@ -11,10 +11,11 @@ class EndingState extends FlxState
 	override public function create():Void 
 	{
 		super.create();
-		var endingScreen:FlxSprite = new FlxSprite(0, 0).loadGraphic('endscreen'); 
+		var endingScreen:FlxSprite = new FlxSprite(0, 0).loadGraphic('endscreen', 'shared'); 
 		endingScreen.antialiasing = true;
 		add(endingScreen);
 		// end screen code
+		// heat why did you make it go to fucking preload when theres no image there
 	}
 	
 	override public function update(elapsed:Float):Void 
